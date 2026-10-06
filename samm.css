@@ -52,7 +52,14 @@ width:600px;
 color:#362418;
 }
 
-
+.lastUpdated
+{
+margin-top:120px;
+margin-left:120px;
+width:600px;
+color:#362418;
+text:"last  uuuu"
+}
 
 
 
@@ -286,7 +293,13 @@ a:hover,a:active
 {
 background-color:#CCCCCC;
 }
-
+.moviesTitle
+{
+font-family:verdana;
+font-size:14pt;
+text-align:left;
+color:#362418;
+}
 .updated
 {
 clear:both;
@@ -296,12 +309,20 @@ font-family:verdana;
 font-size:10pt;
 color:#362418;
 }
-
-.moviesTitle
+.lastUpdated
 {
+clear:both;
+margin-top:20px;
+margin-left:0px;
 font-family:verdana;
-font-size:14pt;
+font-size:10pt;
+font-style: italic;
 text-align:left;
-color:#362418;
 }
 
+object[type="text/html"] {
+    width: 100%;
+    height: 50px;       /* Set a fixed height so the container doesn't overflow vertically */
+    border: none;       /* Removes any default borders the browser adds */
+    overflow: hidden;   /* Disables and hides all horizontal and vertical scrollbars */
+}
