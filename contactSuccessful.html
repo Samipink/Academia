@@ -7,19 +7,62 @@
 <head>
 <!-- This is the link to the "screen" stylesheet -->
 <link rel="stylesheet" type="text/css" href="samm.css" media = "screen"/>
-<title>Contact Page</title>
+<title>Motorbikes Page</title>
 
 <meta name="description" content="Samantha Mulholland Webpage" />
-<meta name="keywords" content="samantha mulholland,Samantha Mulholland,PhD,Paul Cockshott students," />
+<meta name="keywords" content="samantha mulholland,Samantha Mulholland" />
 <meta name="author" content="Samantha Mulholland" />
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/> 
+
+<script type="text/javascript">
+//<![CDATA[
+function autoGrowAndCount(element) {
+    var maxChars = 2000; // Your maximum character limit
+
+    // 1. Manually enforce the Maxlength cap for the Strict Validator
+    if (element.value.length > maxChars) {
+        element.value = element.value.substring(0, maxChars);
+    }
+
+    // Update the countdown display
+    var charsRemaining = maxChars - element.value.length;
+    document.getElementById("char-count-left").innerHTML = charsRemaining.toString();
+
+    // 2. Auto-grow height logic
+    element.style.height = "50px";
+    var currentScrollHeight = element.scrollHeight;
+    
+    if (currentScrollHeight < 300) {
+        element.style.height = currentScrollHeight + "px";
+        element.style.overflowY = "hidden";
+    } else {
+        element.style.height = "300px";
+        element.style.overflowY = "auto";
+    }
+}
+
+//<![CDATA[
+function validateRequiredFields() {
+    var name = document.getElementById("form_name").value.replace(/^\s+|\s+$/g, "");
+    var email = document.getElementById("form_email").value.replace(/^\s+|\s+$/g, "");
+    var message = document.getElementById("message").value.replace(/^\s+|\s+$/g, "");
+
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill out all fields before submitting.");
+        return false; // Blocks the form from sending to web3forms
+    }
+    return true; // Form is full, allows the form to process
+}
+//]]>
+    </script>
+
 </head>
 
 <body>
 <div class="heading"> <!--this is the div box which holds the title banner-->
-<div class="logoImage"><a href="index.html"><img style="border:0" src="images/me.gif" alt="me" ></img></a>
-</div>	 <!--this is me and it links to the contact page-->
-<div class="titleText">Contact Page</div>
+<div class="logoImage"><a name ="index" href="index.html"><img style="border:0" src="images/me.gif" alt="me" ></img></a>
+</div>	 <!--this is me and it links to the research topic page-->
+<div class="titleText">Contact Me</div>
 <div class="bannerImage">
 <img style ="border:0" src="images/lane.jpg" alt="Lilybank Gardens Image" ></img><a name="tips"></a>
 </div>
@@ -37,17 +80,18 @@
 </object>
 </div>
 <div class="welcome">
-<p class = "introText">Welcome to my contact page.</p>  <!-- this is the class for holding the title text-->
+<p class = "introText">Welcome to my contact me page.</p>  <!-- this is the class for holding the title text-->
 </div>
+
 <!-- This is the "sidelink" div which is used to hold the definitions list -->
 <div class = "sideLinks">   <!--this is the box where the hyperlinks go-->
 <dl>
-<dt><a href="index.html" title = "Home">Home</a></dt>
+<dt><a href="index.html" title = "home">Home</a></dt>
 <dt>Hobbies &amp; Interests</dt>
-<dd><a href="gardening.html" title="Hobbies">Gardening</a></dd>
-<dd><a href="motorbikes.html" title="Hobbies">Motorbikes</a></dd>
+<dd><a href="gardening.html" title="gardening">Gardening</a></dd>
+<dd><a href="motorbikes.html" title="motorbikes">Motorbikes</a></dd>
 <dt>Background</dt>
-<dd><a href = "qualifications.html" title = "qualifications">Qualifications</a></dd>
+<dd><a href="qualifications.html" title="qualifications">Qualifications</a></dd>
 <dd><a href="workHistory.html" title="work history">Work History</a></dd>
 <dd><a href="gallery.html" title="gallery">Gallery</a></dd>
 <dt>External Links</dt>
@@ -58,24 +102,13 @@
 </dl>
 </div>
 
-<!-- This is the main body of text -->
-<div class = "mainBody2">  <!--this is the main body of text-->
-<dl>
-<dt>Samantha Mulholland</dt>
-<dt>Senior Software Engineer</dt>
-<dt>Sciencesoft Ltd</dt>
-<dt>11 Orton Place</dt>
-<dt>Glasgow</dt>
-<dt>G51 2HF</dt>
-</dl>
 
-Email:<a href="mailto:samantha_mulholland@yahoo.co.uk?Subject=Website%20enquiry">Samantha Mulholland</a>
- 
- 
- <a href="contactMe.html" title="contact me">Contact me</a>
-<p class="mainText2">
-</p>
-</div>
+<div class="contactFormPanel"> 
+   
+</div>       
+				
+	
+
 
 <!-- This is the CSS validation logo -->
 <div class="validationCSS">
@@ -90,32 +123,22 @@ Email:<a href="mailto:samantha_mulholland@yahoo.co.uk?Subject=Website%20enquiry"
  <!-- This is the XHTML validation logo -->
 <div class="validationXHTML">
   <p>
-    <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fsamipink.github.io%2FAccademia%2Fcontact.html"><img style="border:0"
+    <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fsamipink.github.io%2FAccademia%2FresearchTopic.html"><img style="border:0"
         src="https://www.w3.org/Icons/valid-xhtml10"
         alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
   </p>
-
-
 </div>
 
-
+<!-- Last updated tag -->    
 <div class ="updated">
-Last updated: 14/02/2011
+<object type="text/html" data="lastUpdated.html"></object>
 </div>
-
 
 <!-- This is the list of pages such as the sitemap and contact-->    
 <div class ="bottomList">
 <p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contact.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
 </div>
 
+
 </body>
 </html> 
-
-
-
-
-
-
-
-
