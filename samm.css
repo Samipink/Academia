@@ -60,8 +60,6 @@ width:600px;
 color:#362418;
 }
 
-
-
 .heading    /*This is the div="heading" tag used for holding the banner in, (titleText)*/
 {
 margin-left:15px;
@@ -115,6 +113,53 @@ color:#362418;
 clear:left;
 }
 
+.contactFormPanel {
+    position: relative;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #362418;
+    background-color: #DDDDDD;
+    font-family: verdana, sans-serif;
+    font-size: 10pt;
+    padding: 2%;
+    text-align: left;
+    color: #362418;
+    margin-left: 30px; /* Kept your second margin-left value */
+    width: 25%; /* INCREASED: 15% is too narrow to hold form fields properly side-by-side */
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+/* Replaced HTML cellpadding="10" with clean CSS padding */
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+td.col-left {
+    width: 30%;
+    border: none;
+}
+
+td.col-right {
+    width: 70%;
+    border: none;
+}
+
+/* Force both text inputs and textareas to cleanly fill the 70% column width */
+.contactFormPanel input[type="text"], 
+.contactFormPanel textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: verdana, sans-serif;
+    font-size: 10pt;
+}
 .bottomList
 {
 float:left;
