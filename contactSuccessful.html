@@ -7,55 +7,12 @@
 <head>
 <!-- This is the link to the "screen" stylesheet -->
 <link rel="stylesheet" type="text/css" href="samm.css" media = "screen"/>
-<title>Motorbikes Page</title>
+<title>Message Sent Page</title>
 
 <meta name="description" content="Samantha Mulholland Webpage" />
 <meta name="keywords" content="samantha mulholland,Samantha Mulholland" />
 <meta name="author" content="Samantha Mulholland" />
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/> 
-
-<script type="text/javascript">
-//<![CDATA[
-function autoGrowAndCount(element) {
-    var maxChars = 2000; // Your maximum character limit
-
-    // 1. Manually enforce the Maxlength cap for the Strict Validator
-    if (element.value.length > maxChars) {
-        element.value = element.value.substring(0, maxChars);
-    }
-
-    // Update the countdown display
-    var charsRemaining = maxChars - element.value.length;
-    document.getElementById("char-count-left").innerHTML = charsRemaining.toString();
-
-    // 2. Auto-grow height logic
-    element.style.height = "50px";
-    var currentScrollHeight = element.scrollHeight;
-    
-    if (currentScrollHeight < 300) {
-        element.style.height = currentScrollHeight + "px";
-        element.style.overflowY = "hidden";
-    } else {
-        element.style.height = "300px";
-        element.style.overflowY = "auto";
-    }
-}
-
-//<![CDATA[
-function validateRequiredFields() {
-    var name = document.getElementById("form_name").value.replace(/^\s+|\s+$/g, "");
-    var email = document.getElementById("form_email").value.replace(/^\s+|\s+$/g, "");
-    var message = document.getElementById("message").value.replace(/^\s+|\s+$/g, "");
-
-    if (name === "" || email === "" || message === "") {
-        alert("Please fill out all fields before submitting.");
-        return false; // Blocks the form from sending to web3forms
-    }
-    return true; // Form is full, allows the form to process
-}
-//]]>
-    </script>
-
 </head>
 
 <body>
@@ -80,11 +37,11 @@ function validateRequiredFields() {
 </object>
 </div>
 <div class="welcome">
-<p class = "introText">Welcome to my contact me page.</p>  <!-- this is the class for holding the title text-->
+<p class = "introText">Message sent successfully.</p>  <!-- this is the class for holding the title text-->
 </div>
 
-<!-- This is the "sidelink" div which is used to hold the definitions list -->
-<div class = "sideLinks">   <!--this is the box where the hyperlinks go-->
+<!-- sidelinks -->
+<div class = "sideLinks">   
 <dl>
 <dt><a href="index.html" title = "home">Home</a></dt>
 <dt>Hobbies &amp; Interests</dt>
@@ -104,12 +61,9 @@ function validateRequiredFields() {
 
 
 <div class="contactFormPanel"> 
-   
-</div>       
-				
-	
-
-
+   <div id = "messageSent">Thank you</div>
+   <a href="index.html">  <button>Back to Home page</button></a>
+</div>
 <!-- This is the CSS validation logo -->
 <div class="validationCSS">
 <p>
@@ -136,7 +90,7 @@ function validateRequiredFields() {
 
 <!-- This is the list of pages such as the sitemap and contact-->    
 <div class ="bottomList">
-<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contact.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
+<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contactMe.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
 </div>
 
 

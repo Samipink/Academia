@@ -16,31 +16,14 @@
 </head>
 
 <body>
-<div class="heading"> <!--this is the div box which holds the title banner-->
-<div class="logoImage"><a href="index.html"><img style="border:0" src="images/me.gif" alt="me" ></img></a>
-</div>	 <!--this is me and it links to the contact page-->
-<div class="titleText">Qualifications Page</div>
-<div class="bannerImage">
-<img style ="border:0" src="images/lane.jpg" alt="Lilybank Gardens Image" ></img><a name="tips"></a>
-</div>
-</div>
-<div class ="objectDiv">
-<!-- This is the welcome message -->
-<object id="MyFileName" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="120" height="135">
-<param name="movie" value="movies/uniFlag.swf" />
-<object type="application/x-shockwave-flash" data="movies/uniFlag.swf" width="120" height="135">
-<param name="play" value="true" />
-<param name="loop" value="true" />
-<param name="allowscriptaccess" value="samedomain" />
-<param name="swfversion" value="6.0.65.0" />
-</object>
-</object>
-</div>
-<div class="welcome">
-<p class = "introText">Welcome to my qualifications page.</p>  <!-- this is the class for holding the title text-->
-</div>
 
-<!-- This is the "sidelink" div which is used to hold the definitions list -->
+<div>
+	<object data="headerBanner.html" type="text/html" style="overflow:hidden; height: auto"></object>	
+	<div class="titleText">Qualifications Page</div>
+</div>
+<div class="welcome">Welcome to my qualifications page</div>
+
+<!-- sidelinks --> 
 <div class = "sideLinks">   <!--this is the box where the hyperlinks go-->
 <dl>
 <dt><a href="index.html" title = "home">Home</a></dt>
@@ -61,35 +44,36 @@
 
 <!-- This is the main body of text -->
 <div class = "mainBody2">  <!--this is the main body of text-->
-<p class = "mainText1"> Below is a list of qualifications I have achieved as a student. I have been a full time student at The University of Glasgow, Glasgow Caledonian University and Glasgow Metropolitan College.</p>
-<dl>
-<dt><a href = "http://www.gla.ac.uk/" title = "The University of Glasgow">The University of Glasgow</a></dt>
-<dt> September 2010- October 2015 </dt>
-<dd>MPhil Degree in Computer Science, &quot;Research into 3D Oil Reservoir Visualisation Techniques&quot;</dd>
-<p></p>
-<dt><a href = "http://www.gcu.ac.uk/" title = "Glasgow Caledonian University">Glasgow Caledonian University</a></dt>
-<dt> September 2009 - October 2010 </dt>
-<dd>Masters Degree in &quot;3D Design for Virtual Environments&quot;</dd>
-<dt> September 2008 - June 2009 </dt>
-<dd>Honours Degree in Internet Software Development - &quot;First Class&quot;</dd>
-<dt> September 2007 - June 2008 </dt>
-<dd>Ordinary Degree in Internet Software Developement</dd>
-<p></p>
-<dt><a href = "https://www.cityofglasgowcollege.ac.uk/" title = "Glasgow Metropolitan College">Glasgow Metropolitan College</a></dt>
-<dt> August 2006 - June 2007 </dt>
-<dd>HND in Information Communication Technologies - &quot;First Place&quot;</dd>
-<dt> August 2005 - June 2006 </dt>
-<dd>HNC in Information Communication Technologies - &quot;First Place&quot;</dd>
-<dt> May 2005 - June 2005 </dt>
-<dd>ECDL - European Computer Driving Licence</dd>
-<dt> January 2005 - June 2005 </dt>
-<dd>Basic IT</dd>
-<dt> August 2004 - December 2004 </dt>
-<dd>Woman's Management Skills</dd>
-</dl>
-<p class="mainText2">
-
-</p>
+	<p class = "mainText1"> Below is a list of qualifications I have achieved as a student. I have been a full time student at The University of Glasgow, Glasgow Caledonian University and Glasgow Metropolitan College.</p>
+	<dl>
+		<dt><a href = "http://www.gla.ac.uk/" title = "The University of Glasgow">The University of Glasgow</a></dt>
+		<dt> September 2010- October 2015 </dt>
+		<dd>MPhil Degree in Computer Science, &quot;Research into 3D Oil Reservoir Visualisation Techniques&quot;</dd>	
+	</dl>
+	
+	<dl>		
+		<dt><a href = "http://www.gcu.ac.uk/" title = "Glasgow Caledonian University">Glasgow Caledonian University</a></dt>
+		<dt> September 2009 - October 2010 </dt>
+		<dd>Masters Degree in &quot;3D Design for Virtual Environments&quot;</dd>
+		<dt> September 2008 - June 2009 </dt>
+		<dd>Honours Degree in Internet Software Development - &quot;First Class&quot;</dd>
+		<dt> September 2007 - June 2008 </dt>
+		<dd>Ordinary Degree in Internet Software Developement</dd>
+	</dl>
+	
+	<dl>			
+		<dt><a href = "https://www.cityofglasgowcollege.ac.uk/" title = "Glasgow Metropolitan College">Glasgow Metropolitan College</a></dt>
+		<dt> August 2006 - June 2007 </dt>
+		<dd>HND in Information Communication Technologies - &quot;First Place&quot;</dd>
+		<dt> August 2005 - June 2006 </dt>
+		<dd>HNC in Information Communication Technologies - &quot;First Place&quot;</dd>
+		<dt> May 2005 - June 2005 </dt>
+		<dd>ECDL - European Computer Driving Licence</dd>
+		<dt> January 2005 - June 2005 </dt>
+		<dd>Basic IT</dd>
+		<dt> August 2004 - December 2004 </dt>
+		<dd>Woman's Management Skills</dd>
+	</dl>
 </div>
 
 <!-- This is the CSS validation logo -->
@@ -114,14 +98,14 @@
 </div>
 
 
+<!-- Last updated tag -->    
 <div class ="updated">
-Last updated: 14/02/2011
+<object type="text/html" data="lastUpdated.html"></object>
 </div>
-
 
 <!-- This is the list of pages such as the sitemap and contact-->    
 <div class ="bottomList">
-<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contact.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
+<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contactMe.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
 </div>
 
 </body>

@@ -16,29 +16,14 @@
 </head>
 
 <body>
-<div class="heading"> <!--this is the div box which holds the title banner-->
-<div class="logoImage"><a name ="index" href="index.html"><img style="border:0" src="images/me.gif" alt="me" ></img></a>
-</div>	 <!--this is me and it links to the research topic page-->
-<div class="titleText">Motorbikes Page</div>
-<div class="bannerImage">
-<img style ="border:0" src="images/lane.jpg" alt="Lilybank Gardens Image" ></img><a name="tips"></a>
+
+<div>
+	<object data="headerBanner.html" type="text/html" style="overflow:hidden; height: auto"></object>	
+	<div class="titleText">Motorbikes Page</div>
 </div>
-</div>
-<div class ="objectDiv">
-<!-- This is the welcome message -->
-<object id="MyFileName" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="120" height="135">
-<param name="movie" value="movies/uniFlag.swf" />
-<object type="application/x-shockwave-flash" data="movies/uniFlag.swf" width="120" height="135">
-<param name="play" value="true" />
-<param name="loop" value="true" />
-<param name="allowscriptaccess" value="samedomain" />
-<param name="swfversion" value="6.0.65.0" />
-</object>
-</object>
-</div>
-<div class="welcome">
-<p class = "introText">Welcome to my motorbikes page.</p>  <!-- this is the class for holding the title text-->
-</div>
+
+
+<div class="welcome">Welcome to my motorbikes page.</div>
 
 <!-- This is the "sidelink" div which is used to hold the definitions list -->
 <div class = "sideLinks">   <!--this is the box where the hyperlinks go-->
@@ -61,17 +46,82 @@
 
 <!-- This is the main body of text -->
 <div class = "mainBody2">  <!--this is the main body of text-->
- Motorbikes, motorbikes, motorbikes.
-<p class="mainText2">
-Motorbikes, motorbikes, motorbikes.
-</p>
-<p class="mainText3">
-Motorbikes, motorbikes, motorbikes.
-</p>
+I have several hobbies and interests but one of them is motorbikes. I remember when I was around 12 years old, during the summer holidays I would go with my friend down to the local scrambling course. It was really just a section of rough grass and small hills where my friend's older brother and his mates would take their motorbikes. I used to happily hang on to the back of my friend's brother's bike as he went round the course and over the small make-shift jumps. I never really thought much of it until my mid-life-crisis when I thought I should and see about having some motorbike lessons purely just for a bit of fun and something new to learn. 
+</div>
+
+<div class="motorbikeImages" >
+	<table>		
+		<tr>
+			<td>
+			  <img src="images/meandsuzie.jpg" alt="Suzuki Vstrom DL1050XT" height = "600"></img>
+			  <p style = "text-align: left">Suzuki Vstrom DL1050XT</p> 
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class = "mainBody2"> 
+ That was about 12 years ago now. I enroled on a <a href="https://www.gov.uk/motorcycle-cbt" title = "motorcycle CBT course" onclick="window.open(this.href); return false;">CBT</a>course. This was supposed to be a 1 day course where you have some basic training in the morning then taken out on a supervised run in the afternoon. It took me 3 attempts before they would take me out on the road but eventually I got there. I bought myself a wee 125cc which I spent most of my lunchbreaks and weekends riding around on. 
+</div>
+
+<!--Wendy-->
+<div class="motorbikeImages" >
+	<table>
+		<tr>
+			<td>
+			  <img src="images/wendy.jpg" alt="Honda 125 CBF" height = "450" ></img>
+			  <p style = "text-align: left">Honda 125 CBF</p> 
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class = "mainBody2"> 
+I decided to go for my A1 licence and over the next year successfully passed the 3 stages. I then progressed to larger bikes starting with my first big bike, a Kawasaki Ninja 600.
+</div>
+<!--Nina-->
+<div class="motorbikeImages" >
+	<table>
+		<tr>
+			<td>
+			  <img src="images/nina.jpg" alt="Kawasaki ZX600R Ninja" height = "533" ></img>
+			  <p style = "text-align: center">Kawasaki ZX600R Ninja</p> 
+			</td>
+			<td>
+			  <img src="images/nina2.jpg" alt="Kawasaki ZX600R Ninja" height = "265" ></img>
+			  <p style = "text-align: center">Kawasaki ZX600R Ninja</p> 
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class = "mainBody2"> 
+Since then I have had a few larger bikes, a Yamaha Tracer MT09, Suzuki Vstrom DL650 and my current bike, a Suzuki VStrom DL1050.
+</div>
+
+<!--Nina-->
+<div class="motorbikeImages" >
+<table>
+<tr>
+<td>
+  <img src="images/tracey.jpg" alt="Yamaha Tracer MT09" height = "310" ></img>
+  <p style = "text-align: center">Yamaha Tracer MT09</p> 
+</td>
+<td>
+  <img src="images/doris.jpg" alt="Suzuki Vstrom DL650XT" height = "310" ></img>
+  <p style = "text-align: center">Suzuki Vstrom DL650XT</p> 
+</td>
+<td>
+  <img src="images/suzie.jpg" alt="Suzuki Vstrom DL1050XT" height = "310" ></img>
+  <p style = "text-align: center">Suzuki Vstrom DL1050XT</p> 
+</td>
+</tr>
+</table>
+</div>
+
 <p class = "backToTop">
 <a href="#tips">Back to top</a>
 </p>
-</div>
 
 
 <!-- This is the CSS validation logo -->
@@ -100,7 +150,7 @@ Motorbikes, motorbikes, motorbikes.
 
 <!-- This is the list of pages such as the sitemap and contact-->    
 <div class ="bottomList">
-<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contact.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
+<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contactMe.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
 </div>
 
 

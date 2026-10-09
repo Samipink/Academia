@@ -25,7 +25,6 @@ border:hidden;
 .bannerImage
 {
 position:relative;
-
 height:70px;
 width:200px;
 float:right;
@@ -46,10 +45,13 @@ height:135px;
 
 .welcome
 {
-margin-top:120px;
-margin-left:120px;
+clear:both;
+margin-bottom:10px;
+margin-left:100px;
 width:600px;
 color:#362418;
+font-size:20pt;
+font-family:verdana;
 }
 
 .lastUpdated
@@ -70,9 +72,23 @@ border-style:solid;
 height:70px;
 color:#362418;
 background-color:#DDDDDD;
+overflow:hidden;
 position:relative;
 }
 
+.bannerHeader/* new banner for header file */  
+{
+clear:both;	
+margin-left:15px;
+margin-right:2%;
+top:20px;
+width:97%;
+height:auto;
+border-style:solid;
+color:#362418;
+background-color:#DDDDDD;
+position:absolute;
+}
 .titleText    /*this is the text used for the titles of each page*/
 {
 position:absolute;
@@ -83,12 +99,12 @@ font-size:50px;
 text-align:center;
 width:95%;
 color:#362418;
+top:30px;
 }
 
 .introText
 {
 position:relative;
-margin:20px 15px;
 font-size:20pt;
 font-family:verdana;
 color:#362418;
@@ -189,6 +205,20 @@ padding:20px;
 color:#362418;
 }
 
+.mainBody1
+{
+float:left;
+border-style:solid;
+border-width:1px;
+border-color:#362418;
+margin-left:10px;
+text-align:center;
+width:94%;
+background-color:#DDDDDD;
+padding:20px;
+color:#362418;
+}
+
 .mainBody2
 {
 float:left;
@@ -279,8 +309,16 @@ color:#362418;
 padding-left:5px;
 
 }
-
-
+.centerDiv {
+    display: inline;
+    float: none;
+}
+.motorbikeImages
+{
+ width: 50%;
+ margin: auto;
+ vertical-align: bottom;
+}
 .backToTop
 {
 font-family:verdana;
@@ -370,3 +408,12 @@ object[type="text/html"] {
     border: none;       /* Removes any default borders the browser adds */
     overflow: hidden;   /* Disables and hides all horizontal and vertical scrollbars */
 }
+
+#messageSent {
+	clear:both;
+	margin:30px;
+	font-family:verdana;
+	font-size:16pt;
+	text-align:center;
+}
+
