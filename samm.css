@@ -315,9 +315,10 @@ padding-left:5px;
 }
 .motorbikeImages
 {
- width: 50%;
  margin: auto;
  vertical-align: bottom;
+ text-align:left;
+ 
 }
 .backToTop
 {
