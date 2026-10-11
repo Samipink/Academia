@@ -492,6 +492,10 @@ object[type="text/html"] {
     height: 70px;
     width: auto;
   }
+  
+  .bannerHeader {
+    height: 70px;
+  }
 
   .bannerRight {
     display: none !important;
