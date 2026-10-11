@@ -451,7 +451,11 @@ object[type="text/html"] {
 
 /* MEDIA SECTION */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
 
   body {
     width: auto;
@@ -463,10 +467,28 @@ object[type="text/html"] {
     height: auto;
   }
 
-  /* Page title that sits over the banner */
+  table, td {
+    width: auto;
+  }
+
+  /* Header: keep title and banner together */
+  #Page-Top + div {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  #Page-Top + div object {
+    height: 80px;
+    width: 100%;
+  }
+
   .titleText {
-    font-size: 24px;
-    height: auto;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 80px;
+    line-height: 80px;
+    font-size: 22px;
   }
 
   /* Stack the side links, main content and bottom bar full width */
