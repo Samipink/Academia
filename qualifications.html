@@ -24,6 +24,30 @@
 	<div class="titleText">Qualifications Page</div>
 </div>
 
+<!-- Mobile dropdown menu (hidden on desktop) -->
+<div class="mobileMenu">
+	<select id="mobileNav" onchange="if (this.value) { window.location.href = this.value; }">
+		<option value="">Menu - choose a page</option>
+		<option value="index.html">Home</option>
+		<optgroup label="Hobbies &amp; Interests">
+			<option value="gardening.html">Gardening</option>
+			<option value="motorbikes.html">Motorbikes</option>
+		</optgroup>
+		<optgroup label="Background">
+			<option value="qualifications.html" selected="selected">Qualifications</option>
+			<option value="workHistory.html">Work History</option>
+			<option value="gallery.html">Gallery</option>
+		</optgroup>
+		<optgroup label="External Links">
+			<option value="http://www.sciencesoft.com/">Sciencesoft</option>
+			<option value="http://www.gla.ac.uk/">Glasgow University</option>
+			<option value="https://www.gcu.ac.uk/">Caledonian University</option>
+			<option value="https://www.cityofglasgowcollege.ac.uk/">City of Glasgow College</option>
+	</optgroup>
+	</select>
+</div>
+
+
 <!-- sidelinks -->
 <div class = "sideLinks">
 <dl>
