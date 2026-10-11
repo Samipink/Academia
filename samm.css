@@ -54,14 +54,6 @@ font-size:20pt;
 font-family:verdana;
 }
 
-.lastUpdated
-{
-margin-top:120px;
-margin-left:120px;
-width:600px;
-color:#362418;
-}
-
 .heading    /*This is the div="heading" tag used for holding the banner in, (titleText)*/
 {
 margin-left:1%;
@@ -274,8 +266,6 @@ font-size:12pt;
 color:#362418;
 }
 
-
-
 .mainText1
 {
 font-family:verdana;
@@ -401,7 +391,7 @@ a:link,a:visited
 {
 color:#362418;
 text-align:center;
-padding:1%;
+padding:0 0.2em;
 text-decoration:underline;
 }
 a:hover,a:active
@@ -438,6 +428,19 @@ object[type="text/html"] {
     height: auto;       /* Set a fixed height so the container doesn't overflow vertically */
     border: none;       /* Removes any default borders the browser adds */
     overflow: hidden;   /* Disables and hides all horizontal and vertical scrollbars */
+}
+object.footerObject {
+width: 100%; 
+height: 90px; 
+border: 0; 
+overflow: hidden;
+ }
+ .footerLinks {
+text-align: center; 
+margin: 4px 0; 
+}
+.footerLinks a {
+margin: 0 0.5em; 
 }
 
 #messageSent {
@@ -623,5 +626,9 @@ object[type="text/html"] {
   .lastUpdated {
     width: auto;
     margin-left: 0;
+  }
+  .footerLinks a {
+    display: inline-block;
+    padding: 10px 8px;
   }
 }

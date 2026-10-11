@@ -5,8 +5,9 @@
   xml:lang="en" lang="en">
 
 <head>
-<!-- This is the link to the "screen" stylesheet -->
-<link rel="stylesheet" type="text/css" href="samm.css" media = "screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="samm.css?v=2" media="screen"/>
+
 <meta name="description" content="Samantha Mulholland Webpage" />
 <meta name="keywords" content="samantha mulholland,Samantha Mulholland" />
 <meta name="author" content="Samantha Mulholland" />
@@ -15,9 +16,13 @@
 </head>
 
 <body>
- 
-<div class ="bottomList">
-	<p class="p1"> <a href="sitemap.html" title ="sitemap">|Sitemap| </a><a href="contact.html" title ="contact me">|Contact me| </a><a href="copyright.html" title ="copyright">|Copyright| </a></p>
+
+<!-- Botton footer links -->
+<div class="bottomList"></div>
+<p class="p1 footerLinks"><a href="contactMe.html" title="contact me" onclick="window.top.location.href=this.href; return false;">| Contact me |</a><a href="copyright.html" title="copyright" onclick="window.top.location.href=this.href; return false;">| Copyright |</a></p>
+
+<div class ="lastUpdated">
+	<p>Last updated: 11/10/2026</p>
 </div>
 
 </body>
