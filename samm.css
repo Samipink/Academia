@@ -447,9 +447,8 @@ object[type="text/html"] {
 	font-size:16pt;
 	text-align:center;
 }
-/* Mobile menu button: hidden on desktop */
-.menuToggle,
-.menuButton {
+/* Mobile dropdown: hidden on desktop */
+.mobileMenu {
   display: none;
 }
 
@@ -495,8 +494,28 @@ object[type="text/html"] {
     font-size: 22px;
   }
 
-  /* Stack the side links, main content and bottom bar full width */
-  .sideLinks,
+  /* Hide the sidebar, show the dropdown */
+  .sideLinks {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .mobileMenu select {
+    width: 100%;
+    padding: 12px 8px;
+    font-family: verdana, sans-serif;
+    font-size: 12pt;
+    color: #362418;
+    background-color: #DDDDDD;
+    border: 1px solid #362418;
+    box-sizing: border-box;
+  }
+
+  /* Stack the content and bottom bar full width */
   .mainBody,
   .mainBody1,
   .mainBody2,
@@ -509,42 +528,6 @@ object[type="text/html"] {
     width: auto;
     margin: 0 0 10px 0;
     box-sizing: border-box;
-  }
-
-  .sideLinks {
-    padding: 8px;
-    font-size: 12pt;
-  }
-
-  /* Collapsible menu */
-  .menuButton {
-    display: block;
-    padding: 12px 8px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .sideLinks dl {
-    display: none;
-    margin: 0;
-  }
-
-  .menuToggle:checked ~ dl {
-    display: block;
-  }
-
-  .sideLinks dd {
-    margin: 0 0 0 12px;
-  }
-
-  /* Bigger tap targets for the links */
-  .sideLinks a {
-    display: block;
-    padding: 8px 4px;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .bottomList {
