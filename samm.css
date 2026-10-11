@@ -571,6 +571,7 @@ object[type="text/html"] {
   }
  #mobileLinks a.current {
     font-weight: bold;
+	background-color: #CCCCCC;
   }
   #mobileLinks li.mobileHead {
     padding: 10px 16px 4px 16px;
