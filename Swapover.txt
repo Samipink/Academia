@@ -1,0 +1,13 @@
+What happens if I move my website files from this computer to my home pc, do I need to change anything
+
+Since this is a plain git repo of static HTML/CSS/media files (no build step, no absolute local paths baked into the site itself), moving it to your home PC is straightforward — you don't need to change anything in the files themselves. A few practical things to set up on the new machine:
+
+Install Git on the home PC if it's not already there.
+Clone the repo fresh rather than copying the folder — cleanest way to avoid dragging over machine-specific git config:
+git clone https://github.com/Samipink/Accademia.git
+Git credentials — you'll need to authenticate for git push again on the new machine (GitHub will prompt for login/token, or you can set up SSH keys there). Your GitHub account (Samipink) and the remote repo are unaffected by which computer you use.
+Set your git identity on the new machine if it's not configured globally:
+git config --global user.name "Samantha Mulholland"
+git config --global user.email "your-email@..."
+
+Everything else — the site content, GitHub Pages settings, the repo itself — lives on GitHub, not on this computer, so none of that needs touching. If you'd rather copy the existing folder (including its .git directory) instead of cloning fresh, that works too and preserves uncommitted changes if you have any — just make sure nothing is left uncommitted here before you stop using this machine, so you don't lose work.

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://w3.org" xml:lang="en" lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <style type="text/css">
+        /* Visual styles for the form */
+        body { font-family: sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], textarea { width: 300px; padding: 5px; }
+        
+        /* THE HONEYPOT: Completely hides the trap field from real users */
+        .hidden-trap {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        function validateForm() {
+            // 1. Honeypot Check
+            var honeypot = document.getElementById("website_hp").value;
+            if (honeypot !== "") {
+                alert("Bot detected!");
+                return false; // Silently drops the form submission
+            }
+
+            // 2. Spam Word Filter Check
+            var message = document.getElementById("message").value.toLowerCase();
+            // Add your blocked words to this array
+            var spamWords = ["crypto", "bitcoin", "seo ranking", "casino", "viagra"];
+            
+            for (var i = 0; i < spamWords.length; i++) {
+                if (message.indexOf(spamWords[i]) !== -1) {
+                    alert("Your message contains blocked keywords flagged as spam.");
+                    return false; // Blocks submission
+                }
+            }
+
+            return true; // Form is clean, proceed to submit
+        }
+        //]]>
+    </script>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="a91143f0-ff3c-40a6-9fa4-4028aa8ecc5b">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

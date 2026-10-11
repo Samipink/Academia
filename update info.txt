@@ -5,7 +5,7 @@ PS C:\Users\Samantha.Mulholland\samm_WebPage\samm_WebPage\public_html> git add -
 
 Whenever you edit the files in that folder, just run these from the site's folder:
 
-git add -A
+git add "<file path to file>" (use -A for all files)
 git commit -m "describe your change"
 git push
 
