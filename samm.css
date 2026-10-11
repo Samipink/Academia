@@ -447,7 +447,11 @@ object[type="text/html"] {
 	font-size:16pt;
 	text-align:center;
 }
-
+/* Mobile menu button: hidden on desktop */
+.menuToggle,
+.menuButton {
+  display: none;
+}
 
 /* MEDIA SECTION */
 
@@ -512,10 +516,35 @@ object[type="text/html"] {
     font-size: 12pt;
   }
 
+  /* Collapsible menu */
+  .menuButton {
+    display: block;
+    padding: 12px 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .sideLinks dl {
+    display: none;
+    margin: 0;
+  }
+
+  .menuToggle:checked ~ dl {
+    display: block;
+  }
+
+  .sideLinks dd {
+    margin: 0 0 0 12px;
+  }
+
   /* Bigger tap targets for the links */
   .sideLinks a {
-    display: inline-block;
+    display: block;
     padding: 8px 4px;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .bottomList {
