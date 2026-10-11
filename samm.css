@@ -421,3 +421,77 @@ object[type="text/html"] {
 	text-align:center;
 }
 
+
+/* MEDIA SECTION */
+
+@media (max-width: 768px) {
+
+  body {
+    width: auto;
+    margin: 8px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Page title that sits over the banner */
+  .titleText {
+    font-size: 24px;
+    height: auto;
+  }
+
+  /* Stack the side links, main content and bottom bar full width */
+  .sideLinks,
+  .mainBody,
+  .mainBody1,
+  .mainBody2,
+  .mainBody3,
+  .mainBody4,
+  .contactFormPanel,
+  .bottomList {
+    float: none;
+    clear: both;
+    width: auto;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+  }
+
+  .sideLinks {
+    padding: 8px;
+    font-size: 12pt;
+  }
+
+  /* Bigger tap targets for the links */
+  .sideLinks a {
+    display: inline-block;
+    padding: 8px 4px;
+  }
+
+  .bottomList {
+    height: auto;
+    padding: 6px;
+  }
+
+  /* Justified text leaves big gaps on narrow screens */
+  .mainText1,
+  .mainText2,
+  .mainText3 {
+    text-align: left;
+  }
+
+  /* Validation badges: stack instead of floating */
+  .validationCSS,
+  .validationXHTML {
+    float: none;
+    margin: 0 0 5px 0;
+    width: auto;
+  }
+
+  .welcome,
+  .lastUpdated {
+    width: auto;
+    margin-left: 0;
+  }
+}
