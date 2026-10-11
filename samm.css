@@ -485,7 +485,7 @@ object[type="text/html"] {
  
    /* Banner inside the header object */
   #Page-Top + div object {
-    height: 80px !important;
+    height: 84px !important;
   }
 
   .bannerHeader img {
@@ -496,7 +496,10 @@ object[type="text/html"] {
   .bannerHeader {
     height: 70px;
   }
-
+  
+  .bannerPage {
+    overflow: hidden;
+  }
   .bannerRight {
     display: none !important;
   }
@@ -515,20 +518,55 @@ object[type="text/html"] {
     display: none;
   }
 
+  /* Hamburger menu */
   .mobileMenu {
     display: block;
-    margin: 0 0 10px 0;
   }
 
-  .mobileMenu select {
-    width: 100%;
-    padding: 12px 8px;
-    font-family: verdana, sans-serif;
-    font-size: 12pt;
+  .menuIcon {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    z-index: 10;
+    font-size: 26px;
+    line-height: 1;
+    padding: 6px 12px;
     color: #362418;
     background-color: #DDDDDD;
     border: 1px solid #362418;
-    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .mobileLinks {
+    display: none;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #DDDDDD;
+    border: 1px solid #362418;
+    font-family: verdana, sans-serif;
+    font-size: 12pt;
+  }
+
+  .mobileLinks li {
+    float: none;
+  }
+
+  .mobileLinks a:link,
+  .mobileLinks a:visited {
+    display: block;
+    padding: 12px 16px;
+  }
+
+  .mobileHead {
+    padding: 10px 16px 4px 16px;
+    font-weight: bold;
+    color: #362418;
   }
 
   /* Stack the content and bottom bar full width */

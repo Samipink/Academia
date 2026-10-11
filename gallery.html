@@ -19,33 +19,29 @@
 
 <div id="Page-Top"></div>
 
-<div>
-	<object data="headerBanner.html" type="text/html" style="overflow:hidden; height: auto"></object>	
-	<div class="titleText">Gallery Page</div>
-</div>
-
 <!-- Mobile dropdown menu (hidden on desktop) -->
-<div class="mobileMenu">
-	<select id="mobileNav" onchange="if (this.value) { window.location.href = this.value; }">
-		<option value="">Menu - choose a page</option>
-		<option value="index.html">Home</option>
-		<optgroup label="Hobbies &amp; Interests">
-			<option value="gardening.html" selected="selected">Gardening</option>
-			<option value="motorbikes.html">Motorbikes</option>
-		</optgroup>
-		<optgroup label="Background">
-			<option value="qualifications.html">Qualifications</option>
-			<option value="workHistory.html">Work History</option>
-			<option value="gallery.html" selected="selected">Gallery</option>
-		</optgroup>
-		<optgroup label="External Links">
-			<option value="http://www.sciencesoft.com/">Sciencesoft</option>
-			<option value="http://www.gla.ac.uk/">Glasgow University</option>
-			<option value="https://www.gcu.ac.uk/">Caledonian University</option>
-			<option value="https://www.cityofglasgowcollege.ac.uk/">City of Glasgow College</option>
-	</optgroup>
-	</select>
+<div>
+	<object data="headerBanner.html" type="text/html" style="overflow:hidden; height: auto"></object>
+	<div class="mobileMenu">
+		<button type="button" class="menuIcon" title="Menu" onclick="var m = document.getElementById('mobileLinks'); m.style.display = (m.style.display == 'block') ? 'none' : 'block';">&#9776;</button>
+		<ul class="mobileLinks" id="mobileLinks">
+			<li><a href="index.html">Home</a></li>
+			<li class="mobileHead">Hobbies &amp; Interests</li>
+			<li><a href="gardening.html">Gardening</a></li>
+			<li><a href="motorbikes.html">Motorbikes</a></li>
+			<li class="mobileHead">Background</li>
+			<li><a href="qualifications.html">Qualifications</a></li>
+			<li><a href="workHistory.html">Work History</a></li>
+			<li><a href="gallery.html" selected="selected">Gallery</a></li>
+			<li class="mobileHead">External Links</li>
+			<li><a href="http://www.sciencesoft.com/">Sciencesoft</a></li>
+			<li><a href="http://www.gla.ac.uk/">Glasgow University</a></li>
+			<li><a href="https://www.gcu.ac.uk/">Caledonian University</a></li>
+			<li><a href="https://www.cityofglasgowcollege.ac.uk/">City of Glasgow College</a></li>
+		</ul>
+	</div>
 </div>
+<div class="titleText">Gallery Page</div>
 
 <!-- sidelinks --> 
 <div class = "sideLinks">   <!--this is the box where the hyperlinks go-->
