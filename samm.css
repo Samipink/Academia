@@ -324,6 +324,33 @@ padding-left:1%;
  text-align:left;
  
 }
+
+/* Image rows: let the cells wrap and the images shrink */
+.motorbikeImages table,
+.motorbikeImages tbody {
+  display: block;
+  width: 100%;
+}
+
+.motorbikeImages tr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.motorbikeImages td {
+  flex: 1 1 200px;   /* each image wants about 200px, and wraps onto a new line if there isn't room */
+  min-width: 0;
+  padding: 0;
+}
+
+.motorbikeImages img {
+  width: 100%;
+  height: auto;      /* overrides the height="310" in the HTML */
+  max-width: 100%;
+  display: block;
+}
+
 .backToTop
 {
 font-family:verdana;
