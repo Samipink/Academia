@@ -451,6 +451,9 @@ object[type="text/html"] {
 .mobileMenu {
   display: none;
 }
+.bannerRight {
+  float: right;
+}
 
 /* MEDIA SECTION */
 
@@ -483,6 +486,10 @@ object[type="text/html"] {
   #Page-Top + div object {
     height: 80px;
     width: 100%;
+  }
+   /* Hide the right-hand banner image on phones */
+  .bannerRight {
+    display: none;
   }
 
   .titleText {
