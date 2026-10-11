@@ -183,8 +183,16 @@ margin-left:1%;
 text-align:center;
 width:99%;
 background-color:#DDDDDD;
-height:16px;
+height:auto;
 color:#362418;
+}
+.bottomList p {
+margin: 4px 0; 
+}
+.bottomList .lastUpdated {
+text-align: left;
+margin: 0;
+padding-left:1%;
 }
 
 .mainBody
@@ -405,14 +413,6 @@ font-size:14pt;
 text-align:left;
 color:#362418;
 }
-.updated
-{
-margin-top:1%;
-margin-left:1%;
-font-family:verdana;
-font-size:10pt;
-color:#362418;
-}
 .lastUpdated
 {
 margin-top:1%;
@@ -630,5 +630,8 @@ margin: 0 0.5em;
   .footerLinks a {
     display: inline-block;
     padding: 10px 8px;
+  }
+	object.footerObject {
+	height: 110px;
   }
 }
