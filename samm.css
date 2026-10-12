@@ -42,32 +42,6 @@ width:59px;
 height:135px;
 }
 
-
-.welcome
-{
-clear:both;
-margin-bottom:10px;
-margin-left:100px;
-width:600px;
-color:#362418;
-font-size:20pt;
-font-family:verdana;
-}
-
-.heading    /*This is the div="heading" tag used for holding the banner in, (titleText)*/
-{
-margin-left:1%;
-margin-right:1%;
-top:2%;
-width:97%;
-border-style:solid;
-height:70px;
-color:#362418;
-background-color:#DDDDDD;
-overflow:hidden;
-position:relative;
-}
-
 .bannerHeader/* new banner for header file */  
 {
 clear:both;	
@@ -96,14 +70,6 @@ text-align:center;
 width:98%;
 color:#362418;
 top:2.2%;
-}
-
-.introText
-{
-position:relative;
-font-size:20pt;
-font-family:verdana;
-color:#362418;
 }
 
 .sideLinks
@@ -209,20 +175,6 @@ padding:1%;
 color:#362418;
 }
 
-.mainBody1
-{
-float:left;
-border-style:solid;
-border-width:1px;
-border-color:#362418;
-margin-left:1%;
-text-align:center;
-width:98%;
-background-color:#DDDDDD;
-padding:1%;
-color:#362418;
-}
-
 .mainBody2
 {
 float:left;
@@ -232,40 +184,6 @@ border-color:#362418;
 margin-left:1%;
 text-align:left;
 width:79.3%;
-background-color:#DDDDDD;
-padding:1%;
-color:#362418;
-font-family:verdana;
-font-size:12pt;
-color:#362418;
-}
-
-.mainBody3
-{
-float:left;
-border-style:solid;
-border-width:1px;
-border-color:#362418;
-margin-left:1%;
-text-align:left;
-width:25%;
-background-color:#DDDDDD;
-padding:1%;
-color:#362418;
-font-family:verdana;
-font-size:12pt;
-color:#362418;
-}
-
-.mainBody4
-{
-float:left;
-border-style:solid;
-border-width:1px;
-border-color:#362418;
-margin-left:1%;
-text-align:left;
-width:45%;
 background-color:#DDDDDD;
 padding:1%;
 color:#362418;
@@ -290,14 +208,6 @@ text-align:justify;
 color:#362418;
 }
 
-.mainText3
-{
-font-family:verdana;
-font-size:12pt;
-text-align:justify;
-color:#362418;
-}
-
 .mainText4
 {
 font-family:verdana;
@@ -311,10 +221,7 @@ color:#362418;
 padding-left:1%;
 
 }
-.centerDiv {
-    display: inline;
-    float: none;
-}
+
 .motorbikeImages
 {
  margin: auto;
@@ -406,13 +313,7 @@ a:hover,a:active
 {
 background-color:#CCCCCC;
 }
-.moviesTitle
-{
-font-family:verdana;
-font-size:14pt;
-text-align:left;
-color:#362418;
-}
+
 .lastUpdated
 {
 margin-top:1%;
@@ -589,10 +490,7 @@ margin: 0 0.5em;
 
   /* Stack the content and bottom bar full width */
   .mainBody,
-  .mainBody1,
   .mainBody2,
-  .mainBody3,
-  .mainBody4,
   .contactFormPanel,
   .bottomList {
     float: none;
@@ -609,8 +507,7 @@ margin: 0 0.5em;
 
   /* Justified text leaves big gaps on narrow screens */
   .mainText1,
-  .mainText2,
-  .mainText3 {
+  .mainText2 {
     text-align: left;
   }
 
