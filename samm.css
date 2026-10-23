@@ -301,6 +301,8 @@ overflow:hidden;
 li
 {
 float:left;
+width: 100%;
+text-align:left;
 }
 a:link,a:visited
 {
